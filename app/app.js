@@ -1,6 +1,8 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 
+import Main from './components/main/index.js';
+
 console.log(1236554);
 (function () {
 	'use strict';
@@ -24,7 +26,7 @@ console.log(1236554);
 
 			$stateProvider
 				.state('app', {
-					url: '/',
+					url: '/app',
 					controller: 'appCtrl',
 					controllerAs: 'vm',
 					template: '<section>'+
