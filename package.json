@@ -8,10 +8,16 @@
     "angular-ui-router": "^0.3.1"
   },
   "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-0": "^6.5.0",
+    "html-webpack-plugin": "^2.22.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
+    "start": "webpack-dev-server --inline --watch --colors --port 3031",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +25,11 @@
     "url": "asdd"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  }
 }
