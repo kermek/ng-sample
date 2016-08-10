@@ -5,6 +5,8 @@ console.log(1236554);
 (function () {
 	'use strict';
 
+	console.log("Hi there! 3");
+
 	angular
 		.module('app', [
 			uiRouter
